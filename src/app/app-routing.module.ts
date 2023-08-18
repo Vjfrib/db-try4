@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' }
+  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
   
-  { 
-  path: 'tab2', 
-  loadComponent: () => import('./paginas/emprestimos/emprestimos.page').then( m => m.EmprestimosPage) 
-  }
+  {
+    path: 'teste',
+    loadComponent: () => import('./paginas-novas/teste/teste.page').then( m => m.TestePage)
+  },
 
 ];
 @NgModule({
